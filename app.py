@@ -39,6 +39,9 @@ def main():
         # Append new data point
         new_row = pd.DataFrame({'Time': [new_point], 'Price': [new_price]})
         stock_data = pd.concat([stock_data, new_row], ignore_index=True)
+
+        # Remove the first data point to maintain a sliding window of points
+        stock_data = stock_data.iloc[1:].reset_index(drop=True)
         
         # Detect anomalies on updated data
         stock_data = detect_anomalies(stock_data)
