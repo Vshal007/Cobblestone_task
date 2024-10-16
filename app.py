@@ -4,8 +4,8 @@ import pandas as pd
 import time
 import random
 import matplotlib.pyplot as plt
-from .generate import generate_stock_data
-from .detect import detect_anomalies
+from generate import generate_stock_data
+from detect import detect_anomalies
 
 # Function to introduce random concept drift at random intervals
 def introduce_random_drift(time, drift_magnitude):
