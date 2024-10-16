@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from generate import generate_stock_data
 from detect import detect_anomalies
 
-# Function to introduce random concept drift at random intervals
+
 def introduce_random_drift(time, drift_magnitude):
     return time * np.random.uniform(0.005, 0.02) * drift_magnitude
 
