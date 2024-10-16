@@ -16,13 +16,13 @@ def main():
     st.title('Real-Time Stock Data with Concept Drift and Anomalies')
 
     # Generate initial stock data
-    stock_data = generate_stock_data(num_points=50)
+    stock_data = generate_stock_data(num_points=200)
     stock_data = detect_anomalies(stock_data)
     
     plot_container = st.empty()  # Empty container to update plot
 
     # Simulate streaming stock data (new data point every second)
-    new_point = 50
+    new_point = 200
     drift_magnitude = 0
     while True:
         # Introduce concept drift at random intervals
