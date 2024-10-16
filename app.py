@@ -27,7 +27,7 @@ def main():
     while True:
         # Introduce concept drift at random intervals
         if random.randint(1, 20) == 1:  # Randomly introduce concept drift
-            drift_magnitude += np.random.uniform(-1.5, 1.5)
+            drift_magnitude += np.random.uniform(-1.0, 1.0)
             st.write(f"Concept drift introduced at point {new_point}, drift magnitude: {drift_magnitude:.2f}")
         
         # Generate next data point with drift, seasonality, and noise
