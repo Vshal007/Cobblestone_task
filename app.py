@@ -24,7 +24,7 @@ def main():
     # Simulate streaming stock data (new data point every second)
     #new_point = 200
     drift_magnitude = 0
-    for new_point in range(200,300):
+    for new_point in range(200,400):
         # Introduce concept drift at random intervals
         if random.randint(1, 20) == 1:  # Randomly introduce concept drift
             drift_magnitude += np.random.uniform(-1.0, 1.0)
