@@ -58,7 +58,7 @@ def main():
         ax.set_xlabel('Time')
         ax.set_ylabel('Price')
         ax.legend()
-        new_point += 1
+        #new_point += 1
         
         # Update the plot in Streamlit
         plot_container.pyplot(fig)
