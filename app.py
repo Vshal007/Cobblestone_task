@@ -63,8 +63,10 @@ def main():
         # Update the plot in Streamlit
         plot_container.pyplot(fig)
         
+        
         # Wait for a random interval before the next update (simulating unpredictable real-time data streams)
         time.sleep(random.uniform(0.5, 1.5))
+        plt.clf()
 
 if __name__ == "__main__":
     main()
